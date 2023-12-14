@@ -55,7 +55,7 @@ const Project = ({ img, name, desc, color, link, repo, lang1, lang2, lang3, lang
 							variant="square"
 							sx={{
 								height: '26px',
-								width: 'auto',
+								width: '28px',
 								'&:hover': { transform: 'scale(1.1)' },
 								transition: '200ms'
 							}}
