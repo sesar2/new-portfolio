@@ -1,6 +1,7 @@
 import { Flare } from '@mui/icons-material';
 import { Box, Typography, Button, Link, Divider, Avatar, IconButton } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 import './Project.css';
 
@@ -43,11 +44,7 @@ const Project = ({ img, name, desc, color, link, repo, lang1, lang2, lang3, lang
 						}}
 					>
 						<Typography  fontSize={24}>{name}</Typography>
-						<Avatar
-							sx={{ height: 23, width: 23, filter: 'invert(100%)' }}
-							src="src/assets/external-link.png"
-							variant="square"
-						/>
+						<OpenInNewIcon/>
 					</Box>
 				</Link>
 				<Divider sx={{ bgcolor: 'white', height: '1px' }} />

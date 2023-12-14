@@ -54,7 +54,7 @@ const Projects = () => {
 			<Box
 				sx={{
 					display: 'flex',
-					justifyContent: 'center',
+					justifyContent: {md: 'flex-start', xs: 'center'},
 					flexWrap: 'wrap',
 					flexDirection: {md: 'row', xs: 'column'},
 					p: {md: '0 200px', xs: '0 40px 160px 40px'},
