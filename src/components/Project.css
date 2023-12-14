@@ -1,0 +1,18 @@
+#project:hover #hover{
+    opacity: 100;
+}
+#project:hover #name{
+    opacity: 0;
+}
+#name {
+    transition: all 200ms ease-in;
+}
+
+#project {
+    color: #FFFFFF;
+}
+
+#hover {
+    opacity: 0;
+    transition: 200ms all ease-in;
+}
