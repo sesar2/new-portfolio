@@ -18,5 +18,18 @@ export const themeOptions = createTheme({
             secondary:'#767676'
         },
         divider: '#292929'
-    }
+    },
+    breakpoints: {
+        values: {
+          xs: 0,
+          sm: 600,
+          md: 900,
+          lg: 1800,
+          xl: 1900,
+          xxl: 2000,
+        },
+      },
 })
+
+
+  

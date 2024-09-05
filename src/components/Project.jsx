@@ -10,7 +10,7 @@ const Project = ({ img, name, desc, color, link, repo, lang1, lang2, lang3, lang
 		<Box
 			id="project"
 			sx={{
-				width: {md: '630px', xs: '250px'},
+				width: { lg: '530px', xl: '630px', xs: '250px'},
 				flexDirection: {md: 'row', xs: 'column'},
 				height: {md:'170px', xs: ''},
 				display: 'flex',

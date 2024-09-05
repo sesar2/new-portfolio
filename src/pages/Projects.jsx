@@ -55,9 +55,10 @@ const Projects = () => {
 				sx={{
 					display: 'flex',
 					justifyContent: {md: 'flex-start', xs: 'center'},
+					
 					flexWrap: 'wrap',
 					flexDirection: {md: 'row', xs: 'column'},
-					p: {md: '0 200px', xs: '0 40px 160px 40px'},
+					p: {md: '0 200px', xs: '0 40px 160px 40px', xxl: '0 400px'},
 					gap: { md: 6, xs: 4 },
 					marginBottom: '100px',
 					
