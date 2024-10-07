@@ -51,19 +51,25 @@ const Projects = () => {
 				</Typography>
 				<Divider />
 			</Box>
+			<Box sx={{
+				display:'flex',
+				justifyContent: 'center',
+				alignItems: 'center'
+			}}>
+
 			<Box
 				sx={{
 					display: 'flex',
 					justifyContent: {md: 'flex-start', xs: 'center'},
-					margin: '0 auto 100px auto',
 					flexWrap: 'wrap',
 					flexDirection: {md: 'row'},
-					p: {md: '0 200px', xs: '0 40px 160px 40px', xxl: '0 400px'},
+					
 					gap: { md: 6, xs: 4 },
+					width: { md: '1205px', xl: '1405px'},
 					
 					
 				}}
-			>
+				>
 					<Box
 						ref={ref}
 						component={motion.div}
@@ -74,7 +80,7 @@ const Projects = () => {
 						initial="hidden"
 						animate={mainControls}
 						transition={{ duration: 0.25, delay: 0.4 }}
-					>
+						>
 						<Project
 							repo={'https://github.com/sesar2/rest-countries-flag-app'}
 							link={'https://beautiful-heliotrope-9cba88.netlify.app/'}
@@ -86,7 +92,7 @@ const Projects = () => {
 							lang2={js}
 							lang3={html}
 							lang4={css}
-						/>
+							/>
 					</Box>
 					<Box
 						ref={ref}
@@ -98,7 +104,7 @@ const Projects = () => {
 						initial="hidden"
 						animate={mainControls}
 						transition={{ duration: 0.25, delay: 0.45 }}
-					>
+						>
 						<Project
 							repo={'https://github.com/sesar2/spotify-clone'}
 							link={'https://spiffy-pixie-59a57e.netlify.app/'}
@@ -112,7 +118,7 @@ const Projects = () => {
 							lang2={js}
 							lang3={html}
 							lang4={css}
-						/>
+							/>
 					</Box>
 					<Box
 						ref={ref}
@@ -124,7 +130,7 @@ const Projects = () => {
 						initial="hidden"
 						animate={mainControls}
 						transition={{ duration: 0.25, delay: 0.5 }}
-					>
+						>
 						<Project
 							repo={'https://github.com/sesar2/Klarnachekout'}
 							link={'https://myklarnacheckout-2300b124b2d8.herokuapp.com/'}
@@ -136,7 +142,7 @@ const Projects = () => {
 							lang2={html}
 							lang3={css}
 							lang4={null}
-						/>
+							/>
 					</Box>
 				
 					<Box
@@ -149,7 +155,7 @@ const Projects = () => {
 						initial="hidden"
 						animate={mainControls}
 						transition={{ duration: 0.25, delay: 0.55 }}
-					>
+						>
 						<Project
 							repo={null}
 							link={'https://remarkable-lebkuchen-756823.netlify.app/'}
@@ -161,8 +167,8 @@ const Projects = () => {
 							lang2={js}
 							lang3={html}
 							lang4={css}
-
-						/>
+							
+							/>
 					</Box>
 					<Box
 						ref={ref}
@@ -174,7 +180,7 @@ const Projects = () => {
 						initial="hidden"
 						animate={mainControls}
 						transition={{ duration: 0.25, delay: 0.60 }}
-					>
+						>
 						<Project
 							repo={'https://github.com/sesar2/Webstore'}
 							link={'https://symphonious-sorbet-5ea25e.netlify.app/'}
@@ -188,9 +194,10 @@ const Projects = () => {
 							lang2={js}
 							lang3={html}
 							lang4={css}
-						/>
+							/>
 					</Box>
 			</Box>
+							</Box>
 		</Box>
 	);
 };

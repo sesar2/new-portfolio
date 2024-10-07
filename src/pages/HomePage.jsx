@@ -92,7 +92,7 @@ const HomePage = () => {
 						<JavascriptIcon sx={{'&:hover':{transform: 'scale(1.1)'}, color: '#ffff0a'}} fontSize={'large'} />
 					</Box>
 				</Box>
-				<a href="#Contact">
+				<a href="mailto:isac.danielsson03@gmail.com">
 
 				<Button
 					component={motion.div}

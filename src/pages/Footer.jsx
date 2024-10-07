@@ -76,6 +76,7 @@ const Footer = () => {
 					<Typography sx={{ fontSize: 35, fontWeight: 600, color: 'primary.main', paddingBottom: 3 }}>
 						Send a message
 					</Typography>
+
 					<form style={{ display: 'flex', flexDirection: 'column' }} ref={form} onSubmit={sendEmail}>
 						<Typography>Name</Typography>
 						<input style={{ height: 30, marginBottom: 25 }} type="text" name="user_name" />
@@ -92,17 +93,23 @@ const Footer = () => {
 							}}
 							name="message"
 						/>
-						<input
-							style={{
-								cursor: 'pointer',
-								backgroundColor: '#4D7EA8',
-								color: 'white',
-								border: 'none',
-								padding: '10px'
-							}}
-							type="submit"
-							value="Send"
-						/>
+
+						<a href="mailto:isac.danielsson03@gmail.com">
+							<button
+								style={{
+									cursor: 'pointer',
+									backgroundColor: '#4D7EA8',
+									color: 'white',
+									border: 'none',
+									padding: '10px',
+									textDecoration: 'none',
+									margin: 'auto',
+									width: '100%'
+								}}
+							>
+								Send
+							</button>
+						</a>
 					</form>
 				</Box>
 				<Box
