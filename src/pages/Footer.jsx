@@ -1,7 +1,7 @@
 import { Box, Typography, Avatar, IconButton } from '@mui/material';
 import CodeIcon from '@mui/icons-material/Code';
 import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { Translate } from '@mui/icons-material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -12,19 +12,17 @@ import { useEffect } from 'react';
 
 const Footer = () => {
 	const form = useRef();
+	const [mailBody, setMailBody] = useState('');
+	const [mailName, setMailName] = useState('');
+	const mailToLink = `mailto:isac.danielsson03@gmail.com?subject=Message From ${mailName}&body=${mailBody}`
+	
 
-	const sendEmail = (e) => {
-		e.preventDefault();
-
-		emailjs.sendForm('service_f44a51g', 'template_hrzyu4n', form.current, 'W2ZKy091gsMlfyse9').then(
-			(result) => {
-				console.log(result.text);
-			},
-			(error) => {
-				console.log(error.text);
-			}
-		);
-	};
+	const handleInputBody = (e) =>{
+		setMailBody(e.target.value)
+	}
+	const handInputName = (e)=> {
+		setMailName(e.target.value)
+	}
 
 	const ref = useRef(null);
 	const isInView = useInView(ref, { once: true });
@@ -76,25 +74,38 @@ const Footer = () => {
 					<Typography sx={{ fontSize: 35, fontWeight: 600, color: 'primary.main', paddingBottom: 3 }}>
 						Send a message
 					</Typography>
-
-					<form style={{ display: 'flex', flexDirection: 'column' }} ref={form} onSubmit={sendEmail}>
 						<Typography>Name</Typography>
-						<input style={{ height: 30, marginBottom: 25 }} type="text" name="user_name" />
-						<Typography>Email</Typography>
-						<input style={{ height: 30, marginBottom: 25 }} type="email" name="user_email" />
+						<textarea
+							style={{
+								padding: '10px',
+								maxHeight: 15,
+								minHeight: 15,
+								marginBottom: 25,
+								maxWidth: '258.91px',
+								minWidth: '258.91px',
+								border: '1px solid black'
+								
+							}}
+							name="message"
+							onChange={handInputName}
+						/>
+					
 						<Typography>Message</Typography>
 						<textarea
 							style={{
-								height: 45,
+								padding: '10px',
+								height: 85,
 								marginBottom: 25,
-								maxWidth: '278.91px',
-								minWidth: '278.91px',
-								maxHeight: 85
+								maxWidth: '258.91px',
+								minWidth: '258.91px',
+								maxHeight: 85,
+								border: '1px solid black'
 							}}
 							name="message"
+							onChange={handleInputBody}
 						/>
 
-						<a href="mailto:isac.danielsson03@gmail.com">
+						<a href={mailToLink}>
 							<button
 								style={{
 									cursor: 'pointer',
@@ -110,7 +121,7 @@ const Footer = () => {
 								Send
 							</button>
 						</a>
-					</form>
+					
 				</Box>
 				<Box
 					ref={ref}
