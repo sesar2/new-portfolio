@@ -7,7 +7,8 @@ import flag from "../assets/flagappimage.png"
 import spotify from "../assets/spot.png"
 import klarna from "../assets/klarna.png"
 import store from "../assets/webshop1.png"
-import todo from "../assets/todolisten.png"
+import quiz from "../assets/quiz.png"
+
 import js from '../assets/48ad4561f3b9c1370c90e844f0389a24.png'
 import react from '../assets/0d1fa5d47f8fdc85fc2c47093802d670.png'
 import css from "../assets/e601da9bb6aed09b0383a3bacffeaf8a.png"
@@ -157,16 +158,16 @@ const Projects = () => {
 						transition={{ duration: 0.25, delay: 0.55 }}
 						>
 						<Project
-							repo={null}
-							link={'https://remarkable-lebkuchen-756823.netlify.app/'}
-							name={'Todo List'}
-							img={todo}
-							desc={'A simple "Todo App" where you can add and delete your own "Todos"'}
+							repo={'https://github.com/sesar2/quiz-inl-mning'}
+							link={'https://quiz-inl-mning.vercel.app/'}
+							name={'Quiz'}
+							img={quiz}
+							desc={'A Quiz app created with vanilla JS'}
 							color={'rgba(233, 52, 52, 0.63)'}
-							lang1={react}
-							lang2={js}
-							lang3={html}
-							lang4={css}
+							lang1={js}
+							lang2={html}
+							lang3={css}
+							lang4={null}
 							
 							/>
 					</Box>
