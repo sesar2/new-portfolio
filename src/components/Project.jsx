@@ -12,16 +12,17 @@ const Project = ({ img, name, desc, color, link, repo, lang1, lang2, lang3, lang
 			sx={{
 				width: { md: '530px', xl: '630px', xs: '250px', },
 				flexDirection: {md: 'row', xs: 'column'},
-				height: {md:'170px', xs: '380px'},
+				height: {md:'190px', xs: '380px'},
 				display: 'flex',
 				gap: {md: '40px', xs: '20px'},
 				bgcolor: '#363843',
 				padding: 3,
+				alignItems: 'center'
 				
 			}}
 		>
 			<Box sx={{}}>
-				<Avatar sx={{ height: '170px', width: '250px', objectFit: 'contain', }} variant="square" src={img} />
+				<Avatar sx={{ height: '170px', width: '250px', objectFit: 'fill', }} variant="square" src={img} />
 				{/* <Box sx={{ height: '170px', width: '250px', bgcolor: color, position: 'absolute', top: '24px'}}></Box> */}
 			</Box>
 			<Box

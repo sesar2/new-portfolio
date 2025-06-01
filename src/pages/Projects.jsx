@@ -5,8 +5,8 @@ import Project from '../components/Project';
 
 import flag from "../assets/flagappimage.png"
 import spotify from "../assets/spot.png"
-import klarna from "../assets/klarna.png"
-import store from "../assets/webshop1.png"
+import bookducks from "../assets/browse.png"
+import store from "../assets/hakim.png"
 import quiz from "../assets/quiz.png"
 
 import js from '../assets/48ad4561f3b9c1370c90e844f0389a24.png'
@@ -133,11 +133,11 @@ const Projects = () => {
 						transition={{ duration: 0.25, delay: 0.5 }}
 						>
 						<Project
-							repo={'https://github.com/sesar2/Klarnachekout'}
-							link={'https://myklarnacheckout-2300b124b2d8.herokuapp.com/'}
-							name={'Klarna Checkout'}
-							img={klarna}
-							desc={'A simple webiste integrated with the Klarna checkout API'}
+							repo={'https://github.com/Isac-d/bookducks'}
+							link={null}
+							name={'BookDucks'}
+							img={bookducks}
+							desc={'A where you can browse, rate and review books!'}
 							color={'rgba(179, 77, 195, 0.65)'}
 							lang1={node}
 							lang2={html}
@@ -188,13 +188,13 @@ const Projects = () => {
 							name={'Webstore'}
 							img={store}
 							desc={
-								'A Webstore with a "CRUD" shopping cart that allows you add products to your cart'
+								'A webstore with an admin panel where you can sign in and purchase products'
 							}
 							color={'rgba(255, 211, 53, 0.64)'}
-							lang1={react}
-							lang2={js}
-							lang3={html}
-							lang4={css}
+							lang1={html}
+							lang2={css}
+							lang3={js}
+							lang4={null}
 							/>
 					</Box>
 			</Box>
