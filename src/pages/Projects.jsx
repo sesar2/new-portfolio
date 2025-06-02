@@ -134,7 +134,7 @@ const Projects = () => {
 						>
 						<Project
 							repo={'https://github.com/Isac-d/bookducks'}
-							link={null}
+							link={'https://github.com/Isac-d/bookducks'}
 							name={'BookDucks'}
 							img={bookducks}
 							desc={'A where you can browse, rate and review books!'}
@@ -184,7 +184,7 @@ const Projects = () => {
 						>
 						<Project
 							repo={'https://github.com/sesar2/Webstore'}
-							link={'https://github.com/sesar2/Webstore'}
+							link={'https://be-webshop-2025-fe-cyan.vercel.app/pages/index.html'}
 							name={'Webstore'}
 							img={store}
 							desc={
