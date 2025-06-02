@@ -184,7 +184,7 @@ const Projects = () => {
 						>
 						<Project
 							repo={'https://github.com/sesar2/Webstore'}
-							link={'https://symphonious-sorbet-5ea25e.netlify.app/'}
+							link={'https://github.com/sesar2/Webstore'}
 							name={'Webstore'}
 							img={store}
 							desc={
